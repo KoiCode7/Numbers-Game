@@ -101,7 +101,7 @@
 
     runTimer() {
       const timer = document.getElementById("timer");
-      timer.textContent = ((Date.now() - this.startTime) / 1000).toFixed(2);
+      timer.textContent = 'Elapsed Time: ' + ((Date.now() - this.startTime) / 1000).toFixed(2);
 
       this.timeoutId = setTimeout(() => {
         this.runTimer();
